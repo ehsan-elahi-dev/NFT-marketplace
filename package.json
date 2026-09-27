@@ -13,8 +13,7 @@
     "start:api": "json-server --watch data/data.json --port 3000"
   },
   "dependencies": {
-    "jquery": "^4.0.0",
-    "json-server": "^1.0.0-beta.15"
+    "jquery": "^4.0.0"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.0",
