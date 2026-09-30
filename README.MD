@@ -9,6 +9,14 @@ A modern, responsive NFT Marketplace frontend built with **HTML, Tailwind CSS, J
 
 ---
 
+## 🚀 Live Demo
+
+### 🌍 Visit the Live Website
+
+👉 **https://ehsan-elahi-dev.github.io/NFT-marketplace/**
+
+---
+
 ## ✨ Features
 
 - 📱 **Fully Responsive**
@@ -29,19 +37,6 @@ A modern, responsive NFT Marketplace frontend built with **HTML, Tailwind CSS, J
 - 🌐 **API Integration**
   - Axios for HTTP requests and JSON Server as a mock backend.
 
----
-
-## 🚀 Live Demo
-
-### 🌍 Visit the Live Website
-
-👉 **https://ehsan-elahi-dev.github.io/NFT-marketplace/**
-
-Or click here:
-
-**[Open NFT Marketplace](https://ehsanellahi1385-commits.github.io/NFT-marketplace/)**
-
----
 
 ## 🛠️ Tech Stack
 
