@@ -95,8 +95,7 @@ updateCountdown();
 const timer = setInterval(updateCountdown, 1000);
 
 // collection-carad-second-section
-const API_URL =
-  "https://raw.githubusercontent.com/mmhosseinzadeh9190/mft-final/refs/heads/main/assets/data/data.json";
+const API_URL = "/NFT-marketplace/data.json";
 
 // collection-carad-second-section
 const renderCollectionCard = (collection, creator, index) => {
