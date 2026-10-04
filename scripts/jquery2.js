@@ -1,5 +1,3 @@
-import $ from "jquery";
-
 // blur-scrollbar
 $(window).on("scroll", function () {
   if ($(this).scrollTop() > 50) {
