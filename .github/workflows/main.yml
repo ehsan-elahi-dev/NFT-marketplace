@@ -30,8 +30,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install Linux native binding
-        run: npm install @rolldown/binding-linux-x64-gnu --no-save
+      - name: Install Linux native bindings
+        run: |
+          npm install @rolldown/binding-linux-x64-gnu --no-save
+          npm install lightningcss-linux-x64-gnu@1.32.0 --no-save
 
       - name: Build
         run: npm run build
