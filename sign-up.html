@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+      <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <title>sign-up-page</title>
+  </head>
+  <body class="font-sans">
+    <header
+      id="main-header"
+      class="bg-unique-gray sticky top-0 z-50 transition-all duration-300"
+    >
+      <nav class="text-unique-white px-3 py-4 sm:px-8 xl:px-20">
+        <div class="mx-auto flex w-full max-w-7xl items-center justify-between">
+          <div class="flex items-center gap-2">
+            <img
+              class="h-8 w-8"
+              src="assets/icon/logo.svg"
+              alt="Logo"
+              class="h-7 sm:h-8 lg:h-10"
+            />
+            <span
+              class="font-space-mono text-unique-white ml-2 text-xl font-bold"
+              >NFT Marketplace</span
+            >
+          </div>
+
+          <div class="hidden items-center gap-4 xl:flex">
+            <a
+              href="index.html#marketplace"
+              class="hover:bg-unique-purple rounded-2xl px-6 py-3 transition"
+            >
+              Marketplace
+            </a>
+
+            <a
+              href="index.html#Rankings"
+              class="hover:bg-unique-purple rounded-2xl px-6 py-3 transition"
+            >
+              Rankings
+            </a>
+
+            <a
+              href="index.html#Connect-a-wallet"
+              class="hover:bg-unique-purple rounded-2xl px-6 py-3 transition"
+            >
+              Connect a wallet
+            </a>
+
+            <a
+              href="sign-up.html"
+              class="hover:bg-unique-purple flex items-center gap-2 rounded-2xl px-6 py-3 transition"
+            >
+              <img src="assets/icon/user.svg" alt="User" />
+              Sign Up
+            </a>
+          </div>
+
+          <button id="menu-btn" class="flex items-center xl:hidden">
+            <img src="assets/icon/menu.svg" alt="Menu" class="h-6 w-6" />
+          </button>
+        </div>
+      </nav>
+
+      <div
+        id="mobile-menu"
+        class="bg-unique-gray fixed top-0 right-0 z-50 hidden h-screen w-64 transition-transform duration-300 sm:w-72 xl:hidden"
+      >
+        <div class="p-6">
+          <button id="close-btn" class="text-unique-white mb-6 text-2xl">
+            ✕
+          </button>
+
+          <div class="text-unique-white flex flex-col gap-5">
+            <a
+              href="sign-up.html"
+              class="hover:bg-unique-purple transition hover:rounded-md hover:px-3 hover:py-2"
+            >
+              Sign up
+            </a>
+
+            <a
+              href="index.html#marketplace"
+              class="hover:bg-unique-purple transition hover:rounded-md hover:px-3 hover:py-2"
+            >
+              Marketplace
+            </a>
+
+            <a
+              href="index.html#rankings"
+              class="hover:bg-unique-purple transition hover:rounded-md hover:px-3 hover:py-2"
+            >
+              Rankings
+            </a>
+
+            <a
+              href="index.html#connect-wallet"
+              class="hover:bg-unique-purple transition hover:rounded-md hover:px-3 hover:py-2"
+            >
+              Connect a wallet
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="bg-unique-gray text-unique-white min-h-screen">
+      <section
+        class="mx-auto flex min-h-screen w-full max-w-7xl flex-col md:flex-row"
+      >
+        <div class="w-full md:w-1/2">
+          <img
+            src="assets/iMG/Image Placeholder.png"
+            alt="Space"
+            class="h-58 w-full object-cover md:h-full"
+          />
+        </div>
+
+        <div
+          class="flex w-full flex-col justify-center px-7.5 py-10 md:w-1/2 md:px-10 lg:px-15"
+        >
+          <div class="max-w-115">
+            <h1
+              class="mb-5 text-[32px] leading-14 font-semibold md:text-[38px] lg:text-[51px]"
+            >
+              Create Account
+            </h1>
+
+            <p
+              class="mb-8 text-[16px] leading-6 text-gray-300 md:text-[18px] lg:text-[22px]"
+            >
+              Welcome! Enter Your Details And Start Creating, Collecting And
+              Selling NFTs.
+            </p>
+
+            <form class="flex flex-col gap-4" onsubmit="registerUser(event)">
+              <div
+                class="flex h-12 items-center rounded-2xl border-3 border-gray-200 bg-white px-4"
+                id="usernameBox"
+              >
+                <img src="assets/icon/User-gray.svg" alt="" />
+                <input
+                  id="username"
+                  type="text"
+                  placeholder="Username"
+                  class="ml-3 w-full bg-transparent text-black outline-none"
+                  oninput="validateUsername()"
+                />
+              </div>
+
+              <div
+                class="flex h-12 items-center rounded-2xl border-3 border-gray-200 bg-white px-4"
+                id="emailBox"
+              >
+                <img src="assets/icon/Email.svg" alt="" />
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Email Address"
+                  class="ml-3 w-full bg-transparent text-black outline-none"
+                  oninput="validateEmail()"
+                />
+              </div>
+
+              <div
+                class="flex h-12 items-center rounded-2xl border-3 border-gray-200 bg-white px-4"
+                id="passwordBox"
+              >
+                <img src="assets/icon/password.svg" alt="" />
+
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Password"
+                  class="ml-3 w-full bg-transparent text-black outline-none"
+                  oninput="validatePassword()"
+                />
+
+                <button
+                  type="button"
+                  onclick="togglePassword('password')"
+                  class="ml-2 cursor-pointer"
+                >
+                  👁
+                </button>
+              </div>
+
+              <div
+                class="flex h-12 items-center rounded-2xl border-3 border-gray-200 bg-white px-4"
+                id="confirmPasswordBox"
+              >
+                <img src="assets/icon/password.svg" alt="" />
+
+                <input
+                  id="confirmPassword"
+                  type="password"
+                  placeholder="Confirm Password"
+                  class="ml-3 w-full bg-transparent text-black outline-none"
+                  oninput="validateConfirmPassword()"
+                />
+
+                <button
+                  type="button"
+                  onclick="togglePassword('confirmPassword')"
+                  class="ml-2 cursor-pointer"
+                >
+                  👁
+                </button>
+              </div>
+
+              <button
+                type="submit"
+                class="bg-unique-purple mt-4 h-12 cursor-pointer rounded-2xl font-semibold transition hover:bg-purple-800"
+              >
+                Create Account
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-footer-bg text-unique-white py-12">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="flex flex-col gap-12 lg:flex-row lg:gap-16">
+          <div class="lg: flex flex-col gap-6">
+            <div class="flex items-center gap-2">
+              <img
+                class="h-8 w-8"
+                src="assets/icon/logo.svg"
+                alt="Logo"
+                class="h-7 sm:h-8 lg:h-10"
+              />
+              <span
+                class="font-space-mono text-unique-white ml-2 text-xl font-bold"
+                >NFT Marketplace</span
+              >
+            </div>
+
+            <p class="text-lightest-gray text-sm leading-relaxed">
+              NFT marketplace UI created with Anima for Figma.
+            </p>
+
+            <div class="flex flex-col gap-4">
+              <p class="text-lightest-gray text-sm">Join our community</p>
+
+              <div class="flex gap-3">
+                <a href="#"
+                  ><img
+                    src="assets/icon/DiscordLogo.svg"
+                    class="h-8 w-8 transition hover:opacity-70"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="assets/icon/YoutubeLogo.svg"
+                    class="h-8 w-8 transition hover:opacity-70"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="assets/icon/TwitterLogo.svg"
+                    class="h-8 w-8 transition hover:opacity-70"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="assets/icon/InstagramLogo.svg"
+                    class="h-8 w-8 transition hover:opacity-70"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-6 lg:w-1/4">
+            <h3 class="text-unique-white text-xl font-bold">Explore</h3>
+
+            <ul class="text-lightest-gray flex flex-col gap-4">
+              <li>
+                <a href="#" class="hover:text-unique-white">Marketplace</a>
+              </li>
+              <li><a href="#" class="hover:text-unique-white">Rankings</a></li>
+              <li>
+                <a href="#" class="hover:text-unique-white">Connect a wallet</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-6 lg:flex-1">
+            <h3 class="text-unique-white text-xl font-bold">
+              Join Our Weekly Digest
+            </h3>
+
+            <p class="text-lightest-gray text-sm">
+              Get exclusive promotions & updates straight to your inbox.
+            </p>
+
+            <div class="bg-unique-white flex w-full rounded-xl sm:max-w-md">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                class="placeholder:text-light-gray text-unique-gray w-full rounded-l-xl px-4 py-3 outline-none placeholder:opacity-60"
+              />
+
+              <button
+                class="bg-unique-purple text-unique-white cursor-pointer rounded-xl px-12 py-4 text-base font-semibold transition hover:bg-purple-800"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-light-gray mt-10 border-t pt-5 text-center lg:text-left"
+        >
+          <p class="text-xs text-gray-400">
+            Ⓒ NFT Market. Use this template freely.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      id="backToTop"
+      class="border-footer-bg hover:bg-unique-purple y-300 fixed right-6 bottom-6 hidden h-14 w-14 cursor-pointer items-center justify-center rounded-full border bg-white/10 text-white backdrop-blur-lg transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:shadow-[0_0_25px_rgba(162,89,255,0.7)]"
+    >
+      ↑
+    </button>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script> -->
+    <script type="module" src="scripts/jquery.js"></script>
+  </body>
+</html>

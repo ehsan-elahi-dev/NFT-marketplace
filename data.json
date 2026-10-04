@@ -1,0 +1,220 @@
+{
+  "collections": [
+    {
+      "id": 1,
+      "name": "DSGN Animals",
+      "total_items": 1025,
+      "images": [
+        "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/collections/dsgn-animals-1.png?raw=true",
+        "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/collections/dsgn-animals-2.png?raw=true",
+        "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/collections/dsgn-animals-3.png?raw=true"
+      ],
+      "creator_id": 6
+    },
+    {
+      "id": 2,
+      "name": "Magic Mushrooms",
+      "total_items": 1422,
+      "images": [
+        "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/collections/magic-mushrooms-1.png?raw=true",
+        "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/collections/magic-mushrooms-2.png?raw=true",
+        "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/collections/magic-mushrooms-3.png?raw=true"
+      ],
+      "creator_id": 7
+    },
+    {
+      "id": 3,
+      "name": "Disco Machines",
+      "total_items": 1605,
+      "images": [
+        "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/collections/disco-machines-1.png?raw=true",
+        "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/collections/disco-machines-2.png?raw=true",
+        "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/collections/disco-machines-3.png?raw=true"
+      ],
+      "creator_id": 8
+    }
+  ],
+
+  "creators": [
+    {
+      "id": 1,
+      "name": "Keepitreal",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/creators/keepitreal.png?raw=true",
+      "total_sales": 34.53,
+      "currency": "ETH"
+    },
+    {
+      "id": 2,
+      "name": "DigiLab",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/creators/digilab.png?raw=true",
+      "total_sales": 42.17,
+      "currency": "ETH"
+    },
+    {
+      "id": 3,
+      "name": "GravityOne",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/creators/gravityone.png?raw=true",
+      "total_sales": 28.94,
+      "currency": "ETH"
+    },
+    {
+      "id": 4,
+      "name": "Juanie",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/creators/juanie.png?raw=true",
+      "total_sales": 51.63,
+      "currency": "ETH"
+    },
+    {
+      "id": 5,
+      "name": "BlueWhale",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/creators/bluewhale.png?raw=true",
+      "total_sales": 19.85,
+      "currency": "ETH"
+    },
+    {
+      "id": 6,
+      "name": "Mr Fox",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/creators/mrfox.png?raw=true",
+      "total_sales": 47.32,
+      "currency": "ETH"
+    },
+    {
+      "id": 7,
+      "name": "Shroomie",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/creators/shroomie.png?raw=true",
+      "total_sales": 63.71,
+      "currency": "ETH"
+    },
+    {
+      "id": 8,
+      "name": "Robotica",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/creators/robotica.png?raw=true",
+      "total_sales": 15.49,
+      "currency": "ETH"
+    },
+    {
+      "id": 9,
+      "name": "RustyRobot",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/creators/rustyrobot.png?raw=true",
+      "total_sales": 38.56,
+      "currency": "ETH"
+    },
+    {
+      "id": 10,
+      "name": "Animakid",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/creators/animakid.png?raw=true",
+      "total_sales": 72.14,
+      "currency": "ETH"
+    },
+    {
+      "id": 11,
+      "name": "Dotgu",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/creators/dotgu.png?raw=true",
+      "total_sales": 24.68,
+      "currency": "ETH"
+    },
+    {
+      "id": 12,
+      "name": "Ghiblier",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/creators/ghiblier.png?raw=true",
+      "total_sales": 56.92,
+      "currency": "ETH"
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "Art",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/categories/art.png?raw=true",
+      "icon": "https://raw.githubusercontent.com/mmhosseinzadeh9190/mft-final/refs/heads/main/assets/icons/categories/art.svg"
+    },
+    {
+      "id": 2,
+      "name": "Collectibles",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/categories/collectibles.png?raw=true",
+      "icon": "https://raw.githubusercontent.com/mmhosseinzadeh9190/mft-final/refs/heads/main/assets/icons/categories/collectibles.svg"
+    },
+    {
+      "id": 3,
+      "name": "Music",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/categories/music.png?raw=true",
+      "icon": "https://raw.githubusercontent.com/mmhosseinzadeh9190/mft-final/refs/heads/main/assets/icons/categories/music.svg"
+    },
+    {
+      "id": 4,
+      "name": "Photography",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/categories/photography.png?raw=true",
+      "icon": "https://raw.githubusercontent.com/mmhosseinzadeh9190/mft-final/refs/heads/main/assets/icons/categories/photography.svg"
+    },
+    {
+      "id": 5,
+      "name": "Video",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/categories/video.png?raw=true",
+      "icon": "https://raw.githubusercontent.com/mmhosseinzadeh9190/mft-final/refs/heads/main/assets/icons/categories/video.svg"
+    },
+    {
+      "id": 6,
+      "name": "Utility",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/categories/utility.png?raw=true",
+      "icon": "https://raw.githubusercontent.com/mmhosseinzadeh9190/mft-final/refs/heads/main/assets/icons/categories/utility.svg"
+    },
+    {
+      "id": 7,
+      "name": "Sport",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/categories/sport.png?raw=true",
+      "icon": "https://raw.githubusercontent.com/mmhosseinzadeh9190/mft-final/refs/heads/main/assets/icons/categories/sport.svg"
+    },
+    {
+      "id": 8,
+      "name": "Virtual Worlds",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/categories/virtual-worlds.png?raw=true",
+      "icon": "https://raw.githubusercontent.com/mmhosseinzadeh9190/mft-final/refs/heads/main/assets/icons/categories/virtual-worlds.svg"
+    }
+  ],
+
+  "nfts": [
+    {
+      "id": 1,
+      "name": "Distant Galaxy",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/nfts/distant-galaxy.png?raw=true",
+      "creator_id": 3,
+      "price": {
+        "amount": 1.63,
+        "currency": "ETH"
+      },
+      "highest_bid": {
+        "amount": 0.33,
+        "currency": "wETH"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Life On Edena",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/nfts/life-on-edena.png?raw=true",
+      "creator_id": 5,
+      "price": {
+        "amount": 2.45,
+        "currency": "ETH"
+      },
+      "highest_bid": {
+        "amount": 0.45,
+        "currency": "wETH"
+      }
+    },
+    {
+      "id": 3,
+      "name": "AstroFiction",
+      "image": "https://github.com/mmhosseinzadeh9190/mft-final/blob/main/assets/images/nfts/astro-fiction.png?raw=true",
+      "creator_id": 11,
+      "price": {
+        "amount": 3.1,
+        "currency": "ETH"
+      },
+      "highest_bid": {
+        "amount": 1.25,
+        "currency": "wETH"
+      }
+    }
+  ]
+}
