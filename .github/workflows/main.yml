@@ -27,13 +27,22 @@ jobs:
         with:
           node-version: 22
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Install Linux native bindings
+      - name: Clean install
         run: |
-          npm install @rolldown/binding-linux-x64-gnu --no-save
-          npm install lightningcss-linux-x64-gnu@1.32.0 --no-save
+          rm -rf node_modules
+          npm install --include=optional
+
+      - name: Install Rolldown Linux binding
+        run: npm install @rolldown/binding-linux-x64-gnu --no-save --force
+
+      - name: Install Lightning CSS Linux binding
+        run: npm install lightningcss-linux-x64-gnu@1.32.0 --no-save --force
+
+      - name: Verify native bindings
+        run: |
+          node -e "require('@rolldown/binding-linux-x64-gnu')"
+          node -e "require('lightningcss')"
+          echo "Native bindings OK"
 
       - name: Build
         run: npm run build
